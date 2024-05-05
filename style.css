@@ -1,0 +1,32 @@
+.block {
+    background-color: springgreen;
+    width: 100px;
+    animation-name: block;
+        animation-timing-function: linear;
+        animation-duration: 6s;
+        animation-direction: unset;
+        animation-iteration-count: infinite;
+    height: 100px;
+}
+
+@keyframes block{
+    25% {
+        background-color: dodgerblue;
+        transform: translateY(300px);
+    }
+
+    50% {
+        background-color: coral;
+        transform: translateX(700px)
+        translateY(300px);
+    }
+
+    75% {
+        background-color: blueviolet;
+        transform: translateX(700px);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
